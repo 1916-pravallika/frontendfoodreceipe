@@ -34,7 +34,7 @@ export default function Admin() {
 
   const fetchRecipes = () => {
     axios
-      .get("http://107.20.131.86 :8082/recipe")
+      .get("http://107.20.131.86:8082/recipe")
       .then((res) => {
         setRecipes(res.data);
         setFilteredRecipes(res.data);
@@ -49,7 +49,7 @@ export default function Admin() {
   const handleSubmit = () => {
     const request = isUpdating
       ? axios.put("http://107.20.131.86:8082/update", formData)
-      : axios.post("http://107.20.131.86 :8082/insert", formData);
+      : axios.post("http://107.20.131.86:8082/insert", formData);
 
     request
       .then((res) => {
