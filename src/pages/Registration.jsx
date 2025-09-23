@@ -40,7 +40,7 @@ const Registration = () => {
 
     // console.log('Registration data:', formData);
 
-    axios.post('http://34.229.90.149:8082/register', formData).then((response) => {
+    axios.post('http://107.20.131.86:8082/register', formData).then((response) => {
       alert(response.data);
       navigate('/login');
     })
