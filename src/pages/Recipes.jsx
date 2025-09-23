@@ -20,7 +20,7 @@ export default function Recipes() {
 
   const fetchRecipes = () => {
     axios
-      .get("http://107.20.131.86 :8082/recipe")
+      .get("http://107.20.131.86:8082/recipe")
       .then((res) => {
         setRecipes(res.data);
         setFilteredRecipes(res.data);
